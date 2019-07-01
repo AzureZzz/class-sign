@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/login_logo" />
+    </RelativeLayout>
+
+    <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+        android:id="@+id/met_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        app:met_allowEmpty="false"
+        app:met_errorEmpty="手机号不能为空!"
+        app:met_errorMessage="请输入正确的手机号"
+        android:hint="手机号"
+        app:met_regexp="^(((13[0-9])|(14[579])|(15([0-3]|[5-9]))|(16[6])|(17[0135678])|(18[0-9])|(19[89]))\\d{8})$"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:textSize="16sp"
+        app:met_clearButton="true"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelAnimating="true"
+        app:met_primaryColor="@color/colorBottom" />
+
+    <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+        android:id="@+id/met_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:hint="密码"
+        app:met_allowEmpty="false"
+        app:met_errorEmpty="密码不能为空!"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="16sp"
+        app:met_clearButton="true"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelAnimating="true"
+        app:met_primaryColor="@color/colorBottom" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="4dp">
+
+        <CheckBox
+            android:id="@+id/cb_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:text="记住密码"
+            android:textColor="@color/colorHint"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cb_remember"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="注册"
+            android:textColor="@color/colorHint"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="?attr/xui_config_content_spacing_horizontal"
+        android:layout_height="wrap_content">
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:id="@+id/bv_login"
+            style="@style/ButtonView.Blue"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="48dp"
+            android:text="登 录"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:textRadius="0dp"
+            app:textSolidColor="@color/title_text"/>
+
+        <LinearLayout
+            android:id="@+id/ll_load"
+            android:layout_width="match_parent"
+            android:background="@color/title_text"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="48dp">
+            <com.xuexiang.xui.widget.progress.loading.MiniLoadingView
+                android:layout_height="wrap_content"
+                app:mlv_loading_view_color="@color/white"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

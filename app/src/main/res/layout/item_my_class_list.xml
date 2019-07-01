@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/xui_view"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:xui_radius="6dp"
+        app:xui_showBorderOnlyBeforeL="true"
+        app:xui_useThemeGeneralShadowElevation="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_class"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:background="@drawable/jb_blue">
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/fab_type"-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginEnd="19dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:scaleType="center"-->
+                <!--android:src="@drawable/ic_type_student"-->
+                <!--app:fabCustomSize="36dp" />-->
+
+            <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:id="@+id/riv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="16dp"
+                android:outlineAmbientShadowColor="@color/xui_config_color_titlebar"
+                android:outlineSpotShadowColor="@color/xui_config_color_titlebar"
+                android:src="@drawable/ic_type_student"/>
+
+            <TextView
+                android:id="@+id/tv_class_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:text="编译原理"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_class_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="64dp"
+                android:text="王老师"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_class_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="课 号：17003311"
+                android:textColor="#CDC9C9"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_class_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="SDCXZZX"
+                android:textColor="#CDC9C9"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SignInfoActivity">
+
+    <!--<com.xuexiang.xui.widget.actionbar.TitleBar-->
+        <!--android:id="@+id/tb_title_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/xui_config_color_titlebar"-->
+        <!--app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"-->
+        <!--app:tb_titleText="签到详情" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:layout_gravity="center"
+        android:paddingTop="12dp"
+        android:background="@color/xui_config_color_titlebar">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="课堂"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/ic_zoom_out_map_black_24dp" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="false"
+        app:srlEnableLoadMore="false"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/timg"
+                android:gravity="left"
+                app:xui_showBorderOnlyBeforeL="true"
+                app:xui_useThemeGeneralShadowElevation="true">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pc_sign_statistics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left" />
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+            <com.xuexiang.xui.widget.tabbar.EasyIndicator
+                android:id="@+id/ei_sign_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:indicator_height="42dp"
+                app:indicator_line_height="3dp"
+                app:indicator_line_show="true"
+                app:indicator_textSize="14sp"
+                app:indicator_width="0dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_sign_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

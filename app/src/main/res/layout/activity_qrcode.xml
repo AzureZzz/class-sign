@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cloud_sky"
+    android:orientation="vertical"
+    tools:context=".activity.QRCodeActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/tb_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:tb_titleText="课程码" />
+
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/layout_for_test"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="96dp"
+        android:background="@color/xui_config_color_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:xui_radius="4dp"
+        app:xui_showBorderOnlyBeforeL="true"
+        app:xui_useThemeGeneralShadowElevation="true">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/stv_class_info"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            app:sCenterBottomMaxEms="50"
+            app:sCenterBottomTextIsBold="true"
+            app:sCenterBottomTextSize="24sp"
+            app:sCenterBottomTextString="AGDB2E"
+            app:sCenterTopMaxEms="50"
+            app:sCenterTopTextIsBold="true"
+            app:sCenterTopTextSize="32sp"
+            app:sCenterTopTextString="就业指导" />
+
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:id="@+id/riv_qrcode"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="48dp"
+            app:riv_border_color="@color/xui_config_color_white"
+            app:riv_border_width="4px"
+            app:riv_selected_border_color="@color/xui_config_color_gray_4"
+            app:riv_selected_border_width="1px"
+            app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+</LinearLayout>

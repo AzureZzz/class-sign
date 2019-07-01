@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="90"
+            android:pivotX="100%"
+            android:pivotY="37%"
+            android:toDegrees="90">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/xui_config_color_titlebar" />
+                <stroke
+                    android:width="0.5dp"
+                    android:color="@color/xui_config_color_titlebar" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

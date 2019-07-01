@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorHint">@color/xui_config_color_gray_7</color>
+    <color name="colorBottom">#6CA6CD</color>
+    <color name="colorBlue">#1296db</color>
+    <color name="colorError">#e7492E</color>
+    <color name="colorHINT">#575757</color>
+    <color name="colorTop">#FAFAFA</color>
+
+    <color name="home_back_unselected">#676767</color>
+    <color name="home_back_selected">#3883D1</color>
+    <color name="home_back_selected01">#E24242</color>
+
+    <color name="title_back">#2F83C7</color>
+
+    <color name="color_green">#13D1BE</color>
+
+    <color name="product_detail_common">#666666</color>
+
+    <color name="text_progress">#18b4ed</color>
+
+    <color name="title_text">#26B8EE</color>
+
+    <color name="divider_line">#e1e1e1</color>
+
+    <color name="product_red_common">#e84768</color>
+
+    <color name="round_red_common">#DC143C</color>
+
+    <color name="my_title_bg">#28baed</color>
+    <color name="more_text">#5A6E9E</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="sign_type_select_border">@color/title_text</color>
+    <color name="sign_type_select_bg">@color/xui_config_color_separator_light_phone</color>
+    <color name="sign_type_normal_border">@color/xui_config_color_gray_9</color>
+    <color name="sign_type_normal_bg">#ffffff</color>\
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.CodeSignInActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/tb_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:tb_titleText="数字考勤" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content">
+        <com.xuexiang.xui.widget.edittext.verify.VerifyCodeEditText
+            android:id="@+id/vcet_sign_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="10dp"
+            app:vcet_is_pwd="false"
+            app:vcet_text_size="24sp"
+            app:vcet_number="4"
+            app:vcet_pwd_radius="10dp"
+            app:vcet_text_color="#000000"
+            app:vcet_width="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/rb_sign_in"
+            android:layout_width="128dp"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="考  勤"
+            android:textColor="@color/xui_btn_blue_normal_color"
+            android:textSize="20sp"
+            app:rb_borderColor="@color/xui_btn_blue_normal_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"></com.baidu.mapapi.map.MapView>
+
+    </LinearLayout>
+
+</LinearLayout>

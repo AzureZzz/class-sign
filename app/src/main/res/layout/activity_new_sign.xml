@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.NewSignActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/tb_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:tb_titleText="新建考勤" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/stv_name"
+            style="@style/EditInfoItem"
+            android:background="@color/white"
+            app:sEnableEdit="true"
+            app:sEditTextButtonType="none"
+            app:sEditTextHint="请输入考勤名称"
+            app:sLeftTextString="考勤名称" />
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/stv_end"
+            style="@style/EditInfoItem"
+            android:background="@color/white"
+            app:sCenterTextString="点击选择"
+            app:sCenterViewMarginLeft="10dp"
+            app:sCenterMaxEms="50"
+            app:sCenterTextColor="@color/xui_config_color_gray_9"
+            app:sLeftTextString="结束时间" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="32dp">
+
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:id="@+id/xll_new_num_sign"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/xui_config_color_separator_light_phone"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:xui_borderColor="@color/title_text"
+                app:xui_borderWidth="5dp"
+                app:xui_showBorderOnlyBeforeL="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_number_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="数字考勤" />
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:id="@+id/xll_new_scan_sign"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:xui_borderColor="@color/xui_config_color_gray_9"
+                app:xui_borderWidth="5dp"
+                app:xui_showBorderOnlyBeforeL="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_scan_code_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="扫码考勤" />
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+        </LinearLayout>
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/rb_start_sign"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            android:enabled="false"
+            android:padding="8dp"
+            android:text="开始考勤"
+            android:textColor="@color/xui_btn_blue_normal_color"
+            android:textSize="20sp"
+            app:rb_borderColor="@color/xui_btn_blue_normal_color" />
+    </LinearLayout>
+</LinearLayout>

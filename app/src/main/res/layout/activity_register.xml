@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/tb_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:tb_titleText="注册" />
+
+    <com.xuexiang.xui.widget.tabbar.EasyIndicator
+        android:id="@+id/ei_register_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:indicator_height="42dp"
+        app:indicator_line_height="2dp"
+        app:indicator_line_show="true"
+        app:indicator_textSize="14sp"
+        app:indicator_width="0dp"
+        app:indicator_selected_color="@color/xui_btn_blue_select_color"
+        app:indicator_line_color="@color/xui_btn_blue_select_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stu_name">
+        <item>李建刚</item>
+        <item>谭钰</item>
+        <item>王涛</item>
+        <item>李建刚</item>
+        <item>谭钰</item>
+        <item>王涛</item>
+        <item>李建刚</item>
+        <item>谭钰</item>
+        <item>王涛</item>
+        <item>李建刚</item>
+        <item>谭钰</item>
+        <item>王涛</item>
+        <item>李建刚</item>
+        <item>谭钰</item>
+        <item>王涛</item>
+        <item>李建刚</item>
+        <item>谭钰</item>
+        <item>王涛</item>
+        <item>李建刚</item>
+        <item>谭钰</item>
+        <item>王涛</item>
+        <item>李建刚</item>
+        <item>谭钰</item>
+        <item>王涛</item>
+    </string-array>
+    <string-array name="sign_time">
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+        <item>19/06/07 19:27 数字考勤</item>
+    </string-array>
+    <string-array name="sign_type">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>3</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="class_stu_name">
+        <item>王涛</item>
+        <item>谭钰</item>
+        <item>李建刚</item>
+    </string-array>
+    <string-array name="class_stu_no">
+        <item>1600300128</item>
+        <item>1600300106</item>
+        <item>1600300120</item>
+    </string-array>
+    <string-array name="class_stu_head_img">
+        <item>@drawable/head_img_wt</item>
+        <item>@drawable/head_img_ty</item>
+        <item>@drawable/head_img_ljg</item>
+    </string-array>
+
+    <string-array name="task_name">
+        <item>第一次考勤</item>
+        <item>第二次考勤</item>
+        <item>第三次考勤</item>
+    </string-array>
+    <string-array name="task_type">
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="task_start">
+        <item>19/06/01 9:10</item>
+        <item>19/06/01 9:10</item>
+        <item>19/06/01 9:10</item>
+    </string-array>
+</resources>

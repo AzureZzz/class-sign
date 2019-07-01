@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".activity.ScanSignInActivity"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/tb_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:tb_titleText="扫码考勤" />
+
+    <LinearLayout
+        android:id="@+id/ll_scan"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_scan_sign_in"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"></com.baidu.mapapi.map.MapView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

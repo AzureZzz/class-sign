@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shape"
+    tools:context=".activity.TeacherClassActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/tb_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:tb_titleText="课堂管理" />
+
+    <com.xuexiang.xui.widget.statelayout.StatefulLayout
+        android:id="@+id/sl_stateful"
+        android:layout_below="@+id/tb_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_teacher_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center">
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.xuexiang.xui.widget.imageview.RadiusImageView
+                        android:id="@+id/rv_teacher_head_img"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:clickable="true"
+                        app:riv_border_color="@color/xui_config_color_white"
+                        app:riv_border_width="4px"
+                        app:riv_is_circle="true"
+                        app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                        app:riv_selected_border_width="1px"
+                        app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_teacher_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="小谭老师"
+                            android:textColor="@color/xui_config_color_white" />
+
+                        <TextView
+                            android:id="@+id/tv_class_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="加课码:YUG132"
+                            android:textColor="@color/xui_config_color_white" />
+
+                        <TextView
+                            android:id="@+id/tv_stu_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="学生100人"
+                            android:textColor="@color/xui_config_color_white" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/tv_show_qr_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="48dp"
+                        android:src="@drawable/ic_qr_code" />
+
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_for_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_teacher_info"
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/xui_config_color_white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:xui_radius="4dp"
+                    app:xui_showBorderOnlyBeforeL="true"
+                    app:xui_useThemeGeneralShadowElevation="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_newest_task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_new_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="最新任务"
+                            android:textColor="@color/xui_config_color_75_pure_black"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_task_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_new_info"
+                            android:layout_marginTop="8dp"
+                            android:text="第一次考勤"
+                            android:textColor="@color/xui_config_color_gray_5" />
+
+                        <TextView
+                            android:id="@+id/tv_task_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="48dp"
+                            android:text="19/06/16 10:11"
+                            android:textColor="@color/xui_config_color_gray_5"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/tv_task_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_task_start"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="48dp"
+                            android:text="数字考勤"
+                            android:textColor="@color/xui_config_color_gray_5"
+                            android:textSize="11dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_chevron"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/ic_chevron_right_gary_24dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_no_task"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="无最新消息"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_for_test"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.xuexiang.xui.widget.layout.XUILinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.xuexiang.xui.widget.layout.XUILinearLayout
+                            android:id="@+id/lay_new_sign"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_gravity="left"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/xui_config_color_white"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            app:xui_showBorderOnlyBeforeL="true"
+                            app:xui_useThemeGeneralShadowElevation="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="考勤"
+                                android:textColor="@color/xui_config_color_blue"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/ic_add_blue_24dp" />
+
+                        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                        <com.xuexiang.xui.widget.layout.XUILinearLayout
+                            android:id="@+id/lay_sign_tasks"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/xui_config_color_white"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            app:xui_showBorderOnlyBeforeL="true"
+                            app:xui_useThemeGeneralShadowElevation="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="历史任务"
+                                android:textColor="@color/xui_config_color_light_blue"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/ic_receipt_black_24dp" />
+
+                        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                        <com.xuexiang.xui.widget.layout.XUILinearLayout
+                            android:id="@+id/lay_students"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_gravity="right"
+                            android:layout_marginStart="8dp"
+                            android:background="@color/xui_config_color_white"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            app:xui_showBorderOnlyBeforeL="true"
+                            app:xui_useThemeGeneralShadowElevation="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="学生"
+                                android:textColor="@color/xui_btn_green_normal_color"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/ic_people_black_24dp" />
+                        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_delete_class"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_delete_class" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.xuexiang.xui.widget.statelayout.StatefulLayout>
+
+</RelativeLayout>

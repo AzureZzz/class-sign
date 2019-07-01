@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.NewClassActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/tb_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:tb_titleText="新建课堂" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/stv_class_name"
+            style="@style/EditInfoItem"
+            android:background="@color/white"
+            app:sEditTextButtonType="none"
+            app:sEditTextHint="请输入课程名称"
+            app:sEnableEdit="true"
+            app:sLeftTextString="课程名称" />
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/stv_class_no"
+            style="@style/EditInfoItem"
+            android:background="@color/white"
+            app:sEditTextButtonType="none"
+            app:sEditTextHint="请输入课号"
+            app:sEnableEdit="true"
+            app:sLeftTextString="课号" />
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/rb_create_class"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="创 建"
+            android:textColor="@color/xui_btn_blue_normal_color"
+            android:textSize="20sp"
+            app:rb_borderColor="@color/xui_btn_blue_normal_color" />
+
+        <!--<com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+        <!--android:id="@+id/super_switch_tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--app:sDividerLineType="both"-->
+        <!--app:sLeftTextString="专业"-->
+        <!--app:sRightViewType="switchBtn"-->
+        <!--app:sSwitchIsChecked="true"-->
+        <!--app:sThumbResource="@drawable/thumb"-->
+        <!--app:sTrackResource="@drawable/track" />-->
+
+        <!--<com.xuexiang.xui.widget.shadow.ShadowTextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingEnd="5dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:text="加入"-->
+        <!--android:textColor="@color/xui_config_color_white"-->
+        <!--app:sd_bgColor="?attr/colorAccent"-->
+        <!--app:sd_offsetX="5dp"-->
+        <!--app:sd_offsetY="5dp"-->
+        <!--app:sd_secondBgColor="@color/color_green"-->
+        <!--app:sd_shadowRadius="5dp"-->
+        <!--app:sd_shapeRadius="5dp"-->
+        <!--app:sd_shapeType="round" />-->
+    </LinearLayout>
+
+</LinearLayout>

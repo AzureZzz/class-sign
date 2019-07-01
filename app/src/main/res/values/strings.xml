@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ClassSign</string>
+    <string name="shared_preferences_file_token">sp_token</string>
+    <string name="shared_preferences_file_user">sp_user</string>
+    <string name="user_type">user_type</string>
+
+    <string name="shared_preferences_file_user_info">sp_user_info</string>
+
+    <string name="shared_preferences_file_login">sp_login</string>
+    <string name="login_remember_password">login_remember_password</string>
+    <string name="login_username">login_username</string>
+    <string name="login_password">login_password</string>
+
+    <string name="tip_out_class_confirm">确认退出该课堂？</string>
+    <string name="tip_delete_class_confirm">确认解散该课堂？</string>
+    <string name="tip_save_user_info_confirm">确认保存个人信息？</string>
+    <string name="tip_change_head_confirm">确认更换头像？</string>
+    <string name="tip_logout_confirm">确认退出？</string>
+    <string name="lab_yes">是</string>
+    <string name="lab_no">否</string>
+
+    <string name="root_url">http://139.199.86.115:8080</string>
+
+
+</resources>

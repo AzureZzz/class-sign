@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.JoinClassActivity">
+
+    <ImageView
+        android:id="@+id/iv_join_class_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/back_blue" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="输入邀请码/扫码加入"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="23dp"
+            android:src="@drawable/scan" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edit_first"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_code_edit"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textCursorDrawable="@null"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/edit_second"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_code_edit"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textCursorDrawable="@null"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/edit_third"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_code_edit"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textCursorDrawable="@null"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/edit_fourth"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_code_edit"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textCursorDrawable="@null"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/edit_five"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_code_edit"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textCursorDrawable="@null"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/edit_six"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_code_edit"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textCursorDrawable="@null"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/rb_join_class"
+            android:layout_width="128dp"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="加  入"
+            android:textColor="@color/xui_btn_blue_normal_color"
+            android:textSize="20sp"
+            app:rb_borderColor="@color/xui_btn_blue_normal_color" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MyInfoActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/tb_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_titlebar"
+        app:tb_leftImageResource="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:tb_titleText="个人资料" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:text="头像"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cv_head_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="277dp"
+                android:layout_marginTop="8dp"
+
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/test" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="#A9A9A9"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="姓名"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="37dp"
+                android:gravity="right"
+                android:text="老王"
+                android:textColor="@color/product_detail_common" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="性别"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="37dp"
+                android:gravity="right"
+                android:text="老王"
+                android:textColor="@color/product_detail_common" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_stu_no"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="学号"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_stu_no"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="37dp"
+                android:gravity="right"
+                android:text="1600300120"
+                android:textColor="@color/product_detail_common" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_info_school"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="学校"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="37dp"
+                android:gravity="right"
+                android:text="桂林电子科技大学"
+                android:textColor="@color/product_detail_common" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_info_status"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="身份"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="37dp"
+                android:gravity="right"
+                android:text="学生"
+                android:textColor="@color/product_detail_common" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_info_subject"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="专业"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_major"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="37dp"
+                android:gravity="right"
+                android:text="计算机科学与技术"
+                android:textColor="@color/product_detail_common" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_info_grade"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="年级"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_grade"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="37dp"
+                android:gravity="right"
+                android:text="2016"
+                android:textColor="@color/product_detail_common" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_edit_user_info" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
